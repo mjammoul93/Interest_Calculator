@@ -4,7 +4,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 	
-	<title>Simple Interest Calculator</title>
+	<title>Web App - Simple Interest Calculator</title>
     </head>
 	<div class="maindiv">
     <body>
@@ -12,9 +12,18 @@
 		
 			<h1>Simple Interest Calculator</h1>
 
-			Amount 			<input type="number"  id="principal">  <br/>
-			Interest Rate 	<input id="rate" type="range" min="1" max="20" step="0.25" value="10.25" onChange="ReadRanege()">  <span id="rangeResult">10.25%</span>  <br/>
-			No. of Years 	<select type="number"  id="years">
+			<table>
+			<tr>
+			<td>Amount </td>			<td><input type="number"  id="principal"></td>  <td></td>
+			</tr>
+			<tr>
+			<td>Interest Rate </td>	<td><input id="rate" type="range" min="1" max="20" step="0.25" value="10.25" onChange="ReadRanege()"> </td>
+			<td><span id="rangeResult">10.25%</span> </td>
+			</tr>
+			<tr>
+			<td>No. of Years </td>	
+			<td>
+			<select type="number"  id="years">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -26,16 +35,21 @@
 							<option value="9">9</option>
 							<option value="10">10</option>
 						</select>
-			<br><br>
+						</td>
+						<td></td>
+			</tr>
+			<tr>
+			<td><button onclick="compute()">Compute Interest</button> </td>
+			<td></td>
+			</tr>
 			
-			<button onclick="compute()">Compute Interest</button> <br>
-
-			<br> <span id="result"></span><br>
+			</table>
+			<span id="result"></span><br>
 
 			
 		
 	
 	</body>
-	<footer> &copy; <em id="date">2021/04/03</em>Mahmoud Jammoul </footer>
+	<footer> &copy; Everyone Can Get Rich </footer>
 	</div>
 </html>
